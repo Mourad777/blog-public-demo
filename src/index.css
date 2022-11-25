@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+}
+
+html {
+  height:-webkit-fill-available;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* animation on page load */
+
+@keyframes fade-in-animation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fade-in {
+  animation: fade-in-animation ease-out 1s forwards;
+}
+
+@keyframes fade-out-animation {
+  0% { opacity: 1; }
+  30% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fade-out {
+  animation: fade-out-animation ease-out 5s forwards;
+}
+
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+/* animation: 3s ease-in 1s 2 reverse both paused slidein; */
+
+
+@keyframes draw-animation-one {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-two {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  12% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-three {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  24% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-four {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  36% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-five {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  48% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-six {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  60% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+@keyframes draw-animation-seven {
+  0% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+   }
+  /* 30% { opacity: 1; } */
+  72% { 
+    stroke-dashoffset: 180;
+    fill:rgba(255,255,255,0);
+  }
+
+  100% { 
+    stroke-dashoffset: 0;
+    fill:rgba(255,255,255,1);
+  }
+}
+
+
+
+@keyframes animate-line-1 {
+  0% { 
+    stroke-dashoffset: -233;
+   }
+
+  100% { 
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes unanimate-line-1 {
+  0% { 
+    stroke-dashoffset: 0;
+   }
+
+  100% { 
+    stroke-dashoffset: -233;
+  }
+}
+
+@keyframes animate-ball {
+  0% { 
+    transform: translateX(-600%);
+   }
+
+  100% { 
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes unanimate-ball {
+  0% { 
+    transform: translateX(-50%);
+   }
+
+  100% { 
+    transform: translateX(-600%);
+  }
+}
+
+.ball-appear {
+  animation: animate-ball ease-out 5s forwards;
+}
+
+.ball-dissappear {
+  animation: unanimate-ball ease-out 5s forwards;
+}
+
+
+ .line-1-appear {
+  animation: animate-line-1 ease-out 5s forwards;
+}
+
+.line-1-dissappear {
+  animation: unanimate-line-1 ease-out 5s forwards;
+}
+/*
+.draw2 {
+  animation: draw-animation-two ease-out 2s forwards;
+}
+
+.draw3 {
+  animation: draw-animation-three ease-out 2s forwards;
+}
+
+.draw4 {
+  animation: draw-animation-four ease-out 2s forwards;
+}
+
+.draw5 {
+  animation: draw-animation-five ease-out 2s forwards;
+}
+
+.draw6 {
+  animation: draw-animation-six ease-out 2s forwards;
+}
+
+.draw7 {
+  animation: draw-animation-seven ease-out 2s forwards;
+} */

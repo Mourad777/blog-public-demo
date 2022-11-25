@@ -1,0 +1,13 @@
+.activeLink {
+    transform:scale(1.2);
+    opacity:1;
+}
+
+.activeLink span {
+    opacity: 1;
+}
+
+
+.activeLink:hover {
+    text-decoration: none;
+}
